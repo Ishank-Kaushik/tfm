@@ -57,10 +57,10 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**HELLO...⚡**\n\n**I AM  A PREMIUM TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
+            text="**Hii... 👋**\n\n**I AM  A PREMIUM TELEGRAM FILE (OR) VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO (OR) FILE TO SEE MY POWERS 🪄....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("😶‍🌫️ DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
+                    [InlineKeyboardButton("🍁 DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
                    
                 ]
             ),
@@ -177,7 +177,7 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("Buy Key To Use This Bot 🔑", url="https://t.me/ishank_kaushik")],
                
             ]
         )
@@ -226,13 +226,14 @@ async def about_handler(bot, message):
     await message.reply_text(
         text="""<b>𝗦𝗢𝗠𝗘𝗧𝗛𝗜𝗡𝗚 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘</b>
         
-⚜️<b>MY NAME: <a href='https://t.me/tfm_server_bot'>TFM Server</a></b>
-🔹<b>SUPPORT: <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
-🔸<b>VERSION: 4.0.1</b>
-🔹<b>SERVER: GCS</b>
-🔸<b>LANGUAGE: PYTHON</b>
-🔹<b>BUY PREMIUM KEY: <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
-🔸<b>WEBSITE: <a href='https://www.ishank.ml'>CLICK HERE</a></b
+⚜️<b>MY NAME: <a href='https://t.me/tfm_server_bot'>TFM Server</a></b>\n
+🔹<b>SUPPORT: <a href='https://t.me/ishank_kaushik'>Click Here</a></b>\n
+🔸<b>LAST UPDATED: <a href='https://t.me/tfm_server_bot'>[03-July-2022] 01:34 AM</a></b>\n
+🔹<b>VERSION: 4.0.1</b>\n
+🔸<b>SERVER: GCS</b>\n
+🔹<b>LANGUAGE: PYTHON</b>\n
+🔸<b>BUY PREMIUM KEY: <a href='https://t.me/ishank_kaushik/chat'>Click Here</a></b>\n
+🔹<b>WEBSITE: <a href='https://www.ishank.ml'>Click Here</a></b\n\n
 <b>〔YOU HAVE TO BUY KEY TO USE THIS BOT〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
