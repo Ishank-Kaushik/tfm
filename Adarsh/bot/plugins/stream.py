@@ -24,12 +24,12 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me, If you haven't buy it yet. \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now Send Me Password... 🔑\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me, If you haven't buy it yet. \n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
                 if textp=="/cancel":
-                   await ag.edit("Process Cancelled Successfully")
+                   await ag.edit("Process Cancelled Successfully 😶‍🌫️")
                    return
             else:
                 return
@@ -38,9 +38,9 @@ async def login_handler(c: Client, m: Message):
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
-            ag_text = "yeah! you entered the password correctly"
+            ag_text = "YEAH! You Entered The Password Correctly 🔓. NOW PLEASE SEND ME THE FILE/VIDEO AGAIN..."
         else:
-            ag_text = "Wrong password, try again"
+            ag_text = "Wrong Password 🔒, Please Try Again"
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login command \nDon\'t know the password? Buy it from @ishank_kaushik")
+            await m.reply_text("You Have To Login First To Use Me, PLEASE PRESS /LOGIN Command To Login.")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
