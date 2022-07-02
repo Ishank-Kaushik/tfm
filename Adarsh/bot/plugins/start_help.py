@@ -57,10 +57,10 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**HELLO...⚡**\n\n**I AM A SIMPLE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
+            text="**HELLO...⚡**\n\n**I AM  A PREMIUM TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
+                    [InlineKeyboardButton("😶‍🌫️ DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
                    
                 ]
             ),
@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📂 FILE NAME:-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n⚠️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴\n\n ➖ @TFM_Server_Bot ➖**"
+        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📂 FILE NAME:-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n⚠️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE\n\n ➖ @TFM_Server_Bot ➖**"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -172,7 +172,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ FOR STREAMING JUST COPY THE LINK AND PASTE IT IN YOUR VIDEO PLAYER TO START STREAMING.\n\n┣⪼ FOR MORE INFORMATION:- /about\n\n\nTHANKS FOR READING 😃**", 
+        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ FOR STREAMING JUST COPY THE LINK AND PASTE IT IN YOUR VIDEO PLAYER TO START STREAMING.\n\n┣⪼ FOR MORE INFORMATION:- /about\n\n\nTHANKS FOR USING 🏖️**", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
@@ -224,23 +224,21 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""<b>𝚂𝙾𝙼𝙴𝚃𝙷𝙸𝙽𝙶 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴</b>
-<b>╭━━━━━━━〔TFM-SERVER BOT〕</b>
-┃
-┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a></b>
-┣⪼<b>SUPPORT : <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
-┣⪼<b>VERSION : 3.6.9.02</b>
-┣⪼<b>SERVER : GCS</b>
-┣⪼<b>LANGUAGE: PYTHON 🐍</b>
-┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
-┣⪼<b>WEBSITE : <a href='https://www.ishank.ml'>CLICK HERE</a></b>
-┃
-<b>╰━━━━━━━〔YOU HAVE TO TAKE PERMISSION TO USE THIS BOT〕</b>""",
+        text="""<b>𝗦𝗢𝗠𝗘𝗧𝗛𝗜𝗡𝗚 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘</b>
+        
+⚜️<b>MY NAME: <a href='https://t.me/tfm_server_bot'>TFM Server</a></b>
+🔹<b>SUPPORT: <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
+🔸<b>VERSION: 4.0.1</b>
+🔹<b>SERVER: GCS</b>
+🔸<b>LANGUAGE: PYTHON</b>
+🔹<b>BUY PREMIUM KEY: <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
+🔸<b>WEBSITE: <a href='https://www.ishank.ml'>CLICK HERE</a></b
+<b>〔YOU HAVE TO BUY KEY TO USE THIS BOT〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER ", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("Thanks For Reading ❤️", url="https://t.me/tfm_server_bot")],
                
             ]
         )
