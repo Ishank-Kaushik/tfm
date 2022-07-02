@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me, If you haven't buy it yet. \n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @ishank_kaushik")
+            await m.reply_text("Login first using /login command \nDon\'t know the password? Buy it from @ishank_kaushik")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -105,17 +105,19 @@ async def private_receive_handler(c: Client, m: Message):
         
 
         msg_text ="""
-<b>YOUR LINK IS GENERATED...⚡
+<b>YOUR LINK IS GENERATED 🔮⚡
 
-<b>📧 FILE NAME :- </b> <i><b>{}</b></i>
+<b>📂 FILE NAME:- </b> <i><b>{}</b></i>
 
-<b>📦 FILE SIZE :- </b> <i><b>{}</b></i>
+<b>🗃️ FILE SIZE:- </b> <i><b>{}</b></i>
 
-<b>📥 DOWNLOAD LINK :- </b> <i><b>{}</b></i>
+<b>📥 DOWNLOAD LINK:- </b> <i><b>{}</b></i>
+
+<b>🎥 WATCH ONLINE:- </b> <i><b>{}</b></i>
 
 
 
-<b>♻️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE ♻️\n\n@TFM_Server_Bot</b>"""
+<b>♻️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE ♻️\n\nThank you for being a premium user.💸😃</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
