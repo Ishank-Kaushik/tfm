@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now Send Me Password... 🔑\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me, If you haven't buy it yet. \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now Send Me Password... 🔑\n\n\nYou Have To Buy Key From Onwer To Use Me, If you haven't buy it yet. \n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -38,9 +38,9 @@ async def login_handler(c: Client, m: Message):
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
-            ag_text = "YEAH! You Entered The Password Correctly 🔓. NOW PLEASE SEND ME THE FILE/VIDEO AGAIN..."
+            ag_text = "YEAH! You Entered The Password Correctly 🔓.\n\nNOW PLEASE SEND ME THE FILE/VIDEO AGAIN..."
         else:
-            ag_text = "Wrong Password 🔒, Please Try Again"
+            ag_text = "Wrong Password 🔒\n\nPlease Press /LOGIN Command Again to continue.."
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
