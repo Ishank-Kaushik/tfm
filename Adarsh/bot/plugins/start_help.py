@@ -228,13 +228,13 @@ async def about_handler(bot, message):
         
 ⚜️<b>MY NAME: <a href='https://t.me/tfm_server_bot'>TFM Server</a></b>\n
 🔹<b>SUPPORT: <a href='https://t.me/ishank_kaushik'>Click Here</a></b>\n
-🔸<b>LAST UPDATED: <a href='https://t.me/tfm_server_bot'>[03-July-2022] 01:34 AM</a></b>\n
+🔸<b>LAST UPDATED: <a href='https://t.me/tfm_server_bot'>[03-July-2022]</a></b>\n
 🔹<b>VERSION: 4.0.1</b>\n
-🔸<b>SERVER: GCS</b>\n
+🔸<b>SERVER: PREMIUM SERVER 💾</b>\n
 🔹<b>LANGUAGE: PYTHON</b>\n
 🔸<b>BUY PREMIUM KEY: <a href='https://t.me/ishank_kaushik/chat'>Click Here</a></b>\n
-🔹<b>WEBSITE: <a href='https://www.ishank.ml'>Click Here</a></b\n\n
-<b>〔YOU HAVE TO BUY KEY TO USE THIS BOT〕</b>""",
+🔹<b>WEBSITE: <a href='https://www.ishank.ml'>Click Here</a></b\n
+<b>➖ YOU HAVE TO BUY KEY TO USE THIS BOT ➖</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
